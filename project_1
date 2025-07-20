@@ -89,5 +89,7 @@
       justify-content: space-between;
       margin-bottom: 18px;
     }
+   .checkbox-group label {
+      display: flex;
 
 
