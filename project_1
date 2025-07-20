@@ -29,4 +29,7 @@
       height: auto;
       margin-bottom: 10px;
     }
+    .portal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
 
