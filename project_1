@@ -120,4 +120,8 @@
     .footer-links a {
       color: #0056a3;
       text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
 
