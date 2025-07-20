@@ -32,4 +32,6 @@
     .portal-title {
       font-family: 'Playfair Display', serif;
       font-size: 36px;
+      color: #002147;
+      font-weight: bold;
 
