@@ -47,5 +47,9 @@
     }
    .login-box h2 {
       margin-bottom: 18px;
-      color: #002147;   
+      color: #002147;
+      font-size: 24px;
+      text-align: center;
+    }
+
 
