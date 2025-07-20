@@ -117,4 +117,6 @@
       margin-top: 20px;
       text-align: center;
     }
+    .footer-links a {
+      color: #0056a3;
 
