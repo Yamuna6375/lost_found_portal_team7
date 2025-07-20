@@ -74,5 +74,7 @@
     .input-group-password input {
       padding-right: 40px;
     }
+    .input-group-password img {
+      position: absolute;
 
 
