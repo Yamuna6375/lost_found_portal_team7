@@ -97,6 +97,7 @@
     .checkbox-group input {
       margin-right: 8px;
     }
-
+    .login-box button {
+      width: 100%;
 
 
