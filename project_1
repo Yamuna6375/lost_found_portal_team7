@@ -123,5 +123,8 @@
       margin: 0 10px;
       font-size: 14px;
     }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
 
 
