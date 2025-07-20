@@ -57,4 +57,7 @@
     .input-group label {
       display: block;
       margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+    }
 
