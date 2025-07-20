@@ -71,5 +71,8 @@
     .input-group-password {
       position: relative;
     }
+    .input-group-password input {
+      padding-right: 40px;
+    }
 
 
