@@ -101,5 +101,7 @@
       width: 100%;
       padding: 14px;
       background-color: #002147;
+      color: white;
+      border: none;
 
 
