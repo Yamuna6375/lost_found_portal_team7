@@ -113,4 +113,6 @@
     .login-box button:hover {
       background-color: #0056a3;
     }
+    .footer-links {
+      margin-top: 20px;
 
