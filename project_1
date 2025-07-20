@@ -94,5 +94,9 @@
       align-items: center;
       font-size: 14px;
     }
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
 
 
