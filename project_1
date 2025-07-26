@@ -58,6 +58,8 @@
 	     font-weight: 500;
     }
      .input-group input {
+	      width: 100%;
+	     
 
 
 
