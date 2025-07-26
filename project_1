@@ -16,6 +16,8 @@
       background: linear-gradient(135deg, #e0efff, #ffffff);
        min-height: 100vh;
       display: flex;
+      flex-direction: column;
+      align-items: center;
 
 
 
