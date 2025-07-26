@@ -45,6 +45,7 @@
       max-width: 420px;
     }
   .login-box h2 {
+	  margin-bottom: 20px;
 
 
 
