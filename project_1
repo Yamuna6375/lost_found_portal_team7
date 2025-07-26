@@ -30,6 +30,8 @@
       height: auto;
     }
  .portal-title {
+	  font-family: 'Playfair Display', serif;
+      font-size: 32px;
 
 
 
