@@ -12,6 +12,8 @@
        box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
     }
+    body {
+      background: linear-gradient(135deg, #e0efff, #ffffff);
 
 
 
