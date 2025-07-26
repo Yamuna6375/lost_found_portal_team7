@@ -37,6 +37,8 @@
       letter-spacing: 1px;
     }
  .login-box {
+	 background-color: #ffffff;
+      padding: 30px;
 
 
 
