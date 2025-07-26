@@ -65,6 +65,9 @@
       font-size: 14px;
     }
       .input-group-password {
+	      position: relative;
+    }
+
 	     
 
 
