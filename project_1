@@ -33,6 +33,9 @@
 	  font-family: 'Playfair Display', serif;
       font-size: 32px;
        color: #002147;
+        margin-top: 10px;
+      letter-spacing: 1px;
+    }
 
 
 
