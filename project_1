@@ -198,4 +198,6 @@
  <div class="input-group-password">
         <label for="password">Password</label>
 	<input type="password" id="password" placeholder="Enter your password">
+	<img id="eyeIcon" src="https://img.icons8.com/ios-filled/50/000000/visible--v1.png" onclick="togglePassword()" alt="Toggle password visibility"/>
+      </div>
 
