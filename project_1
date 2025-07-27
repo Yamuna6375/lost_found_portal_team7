@@ -204,4 +204,6 @@
         <img src="https://img.icons8.com/fluency/48/robot-2.png" alt="robot icon">
 	<label><input type="checkbox" id="notRobot"> I am not a robot</label>
       </div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="remember"> Remember me</label>
 
