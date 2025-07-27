@@ -238,5 +238,5 @@
 	     const password = document.getElementById("password").value.trim();
 	    const notRobot = document.getElementById("notRobot").checked;
 	     const error = document.getElementById("errorMsg");
-
+ if (!username || !sen || !phone || !password) {
 
