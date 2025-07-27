@@ -242,4 +242,5 @@
 	  error.textContent = "All fields are required.";
         return false;
       }
+	    if (!/^A866\d{4}$/i.test(sen)) {
 
