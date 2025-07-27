@@ -193,4 +193,7 @@
       </div>
       <div class="input-group">
         <label for="phone">Phone Number</label>
+	 <input type="text" id="phone" placeholder="10-digit phone number">
+      </div>
+
 
