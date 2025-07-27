@@ -187,4 +187,6 @@
         <label for="username">University Email / ID</label>
 	<input type="text" id="username" placeholder="example@amity.edu">
       </div>
+       <div class="input-group">
+        <label for="sen">SEN Number</label>
 
