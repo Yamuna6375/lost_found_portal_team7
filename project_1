@@ -234,4 +234,5 @@
     function validateForm() {
 	     const username = document.getElementById("username").value.trim();
 	      const sen = document.getElementById("sen").value.trim();
+	     const phone = document.getElementById("phone").value.trim();
 
