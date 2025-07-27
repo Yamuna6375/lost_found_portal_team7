@@ -131,6 +131,11 @@
       justify-content: center;
       gap: 10px;
     }
+  .google-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+
 
 
 
