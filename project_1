@@ -180,5 +180,6 @@
     <img src="amity-logo.jpg" alt="Amity University Logo" />
     <div class="portal-title">LOST AND FOUND PORTAL</div>
   </div>
-
+<div class="login-box">
+    <h2>Login</h2>
 
