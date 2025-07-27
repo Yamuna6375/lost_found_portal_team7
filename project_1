@@ -79,7 +79,8 @@
        height: 22px;
       cursor: pointer;
     }
-
+.checkbox-group {
+      display: flex;
 	     
 
 
