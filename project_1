@@ -232,4 +232,5 @@
       }
     }
     function validateForm() {
+	     const username = document.getElementById("username").value.trim();
 
