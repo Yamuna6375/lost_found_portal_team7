@@ -189,4 +189,6 @@
       </div>
        <div class="input-group">
         <label for="sen">SEN Number</label>
+	<input type="text" id="sen" placeholder="e.g., A8661234">
+      </div>
 
