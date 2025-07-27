@@ -93,7 +93,10 @@
  
   .login-box button {
       width: 100%;
-      padding: 12px;    
+      padding: 12px;
+      background-color: #002147;
+      color: white;
+
 
 
 
