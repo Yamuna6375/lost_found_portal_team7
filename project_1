@@ -219,5 +219,6 @@
 <p id="errorMsg"></p>
     </form>
      </div>
-
+ <script>
+    function togglePassword() {
 
