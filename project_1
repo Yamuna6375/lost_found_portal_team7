@@ -180,5 +180,7 @@
   </div>
    <div class="login-box">
     <h2>Login</h2>
+    <form onsubmit="return validateForm()">
+      <div class="input-group">
 
 
