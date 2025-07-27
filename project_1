@@ -237,4 +237,6 @@
 	     const phone = document.getElementById("phone").value.trim();
 	     const password = document.getElementById("password").value.trim();
 	    const notRobot = document.getElementById("notRobot").checked;
+	     const error = document.getElementById("errorMsg");
+
 
