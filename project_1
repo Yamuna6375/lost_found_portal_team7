@@ -239,4 +239,7 @@
 	    const notRobot = document.getElementById("notRobot").checked;
 	     const error = document.getElementById("errorMsg");
  if (!username || !sen || !phone || !password) {
+	  error.textContent = "All fields are required.";
+        return false;
+      }
 
