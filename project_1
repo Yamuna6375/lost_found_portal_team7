@@ -221,4 +221,5 @@
      </div>
  <script>
     function togglePassword() {
+	    const pwd = document.getElementById("password");
 
