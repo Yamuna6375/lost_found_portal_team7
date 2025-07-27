@@ -104,6 +104,12 @@
    .login-box button:hover {
       background-color: #004b94;
     }
+    .footer-links a {
+      text-decoration: none;
+      color: #0056a3;
+      font-size: 14px;
+    }
+
 
 
 
