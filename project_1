@@ -216,5 +216,6 @@
        <div class="footer-links">
 	       <span>New User? </span><a href="#">Create Account</a>
       </div>
-
+<p id="errorMsg"></p>
+    </form>
 
