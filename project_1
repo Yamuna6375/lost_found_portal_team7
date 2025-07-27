@@ -227,4 +227,8 @@
         pwd.type = "text";
 		    eye.src = "https://img.icons8.com/ios-filled/50/000000/closed-eye.png";
       } else {
+	       pwd.type = "password";
+        eye.src = "https://img.icons8.com/ios-filled/50/000000/visible--v1.png";
+      }
+    }
 
