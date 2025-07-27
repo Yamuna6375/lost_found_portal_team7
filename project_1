@@ -12,6 +12,7 @@
        box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
     }
+
     body {
       background: linear-gradient(135deg, #e0efff, #ffffff);
        min-height: 100vh;
@@ -21,22 +22,26 @@
       justify-content: center;
       padding: 20px;
     }
-.logo-container {
+
+    .logo-container {
 	text-align: center;
       margin-bottom: 20px;
     }
-.logo-container img {
+
+    .logo-container img {
 	 width: 100px;
       height: auto;
     }
- .portal-title {
+ 
+    .portal-title {
 	  font-family: 'Playfair Display', serif;
       font-size: 32px;
        color: #002147;
         margin-top: 10px;
       letter-spacing: 1px;
     }
- .login-box {
+ 
+    .login-box {
 	 background-color: #ffffff;
       padding: 30px;
       border-radius: 15px;
@@ -44,7 +49,8 @@
        width: 100%;
       max-width: 420px;
     }
-  .login-box h2 {
+  
+    .login-box h2 {
 	  margin-bottom: 20px;
 	  color: #002147;
 	   text-align: center;
@@ -84,6 +90,10 @@
        align-items: center;
       justify-content: space-between;
       position: absolute;
+ 
+  .login-box button {
+      width: 100%;
+      padding: 12px;    
 
 
 
