@@ -73,10 +73,13 @@
       .input-group-password {
 	      position: relative;
     }
- .input-group-password input {
+      
+ 
+      .input-group-password input {
       padding-right: 40px;
     }
- .input-group-password img {
+ 
+      .input-group-password img {
 	  position: absolute;
 	  right: 10px;
       top: 50%;
@@ -85,13 +88,15 @@
        height: 22px;
       cursor: pointer;
     }
-.checkbox-group {
+
+      .checkbox-group {
       display: flex;
        align-items: center;
       justify-content: space-between;
       position: absolute;
  
-  .login-box button {
+  
+      .login-box button {
       width: 100%;
       padding: 12px;
       background-color: #002147;
@@ -101,22 +106,27 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-   .login-box button:hover {
+   
+      .login-box button:hover {
       background-color: #004b94;
     }
-    .footer-links a {
+    
+      .footer-links a {
       text-decoration: none;
       color: #0056a3;
       font-size: 14px;
     }
- .footer-links a:hover {
+ 
+      .footer-links a:hover {
       text-decoration: underline;
     }
 
- .social-login {
+ 
+      .social-login {
       margin-top: 20px;
     }
- .social-login button {
+ 
+      .social-login button {
       width: 100%;
       margin-top: 10px;
        margin-top: 10px;
@@ -131,17 +141,25 @@
       justify-content: center;
       gap: 10px;
     }
-  .google-btn {
+  
+      .google-btn {
       background-color: #fff;
       border: 1px solid #ccc;
     }
-.github-btn {
+
+      .github-btn {
       background-color: #333;
       color: white;
     }
-.social-login img {
+
+      .social-login img {
       width: 20px;
       height: 20px;
+    }
+
+       .captcha {
+      margin: 20px 0;
+      text-align: center;
     }
 
 
