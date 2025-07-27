@@ -183,4 +183,6 @@
 <div class="login-box">
     <h2>Login</h2>
      <form onsubmit="return validateForm()">
+	      <div class="input-group">
+        <label for="username">University Email / ID</label>
 
