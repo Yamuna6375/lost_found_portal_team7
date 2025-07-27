@@ -223,4 +223,6 @@
     function togglePassword() {
 	    const pwd = document.getElementById("password");
 	    const eye = document.getElementById("eyeIcon");
+	    if (pwd.type === "password") {
+        pwd.type = "text";
 
