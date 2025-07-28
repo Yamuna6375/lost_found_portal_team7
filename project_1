@@ -238,7 +238,9 @@
 	     const password = document.getElementById("password").value.trim();
 	    const notRobot = document.getElementById("notRobot").checked;
 	     const error = document.getElementById("errorMsg");
- if (!username || !sen || !phone || !password) {
+ 
+
+	if (!username || !sen || !phone || !password) {
 	  error.textContent = "All fields are required.";
         return false;
       }
@@ -249,6 +251,10 @@
 
       if (!/^[0-9]{10}$/.test(phone)) {
         error.textContent = "Phone number must be 10 digits.";
+        return false;
+      }
+	    if (!notRobot) {
+        error.textContent = "Please confirm you're not a robot.";
         return false;
       }
 
