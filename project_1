@@ -257,6 +257,7 @@
         error.textContent = "Please confirm you're not a robot.";
         return false;
       }
+	     error.textContent = "";
 
 
 
