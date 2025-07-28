@@ -242,9 +242,10 @@
 	  error.textContent = "All fields are required.";
         return false;
       }
-	    if (!/^A866\d{4}$/i.test(sen)) {
-		     error.textContent = "SEN must be like A8661234.";
+	   if (!/^A866\d{4}$/i.test(sen)) {
+        error.textContent = "SEN must be like A8661234.";
         return false;
       }
+
 
 
