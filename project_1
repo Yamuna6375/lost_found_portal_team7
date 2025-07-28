@@ -247,5 +247,10 @@
         return false;
       }
 
+      if (!/^[0-9]{10}$/.test(phone)) {
+        error.textContent = "Phone number must be 10 digits.";
+        return false;
+      }
+
 
 
