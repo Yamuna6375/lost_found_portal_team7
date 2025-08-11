@@ -101,7 +101,7 @@
       width: 100%;
       padding: 12px;
       background-color: #002147;
-      color: white;
+      color: red;
        border: none;
       border-radius: 6px;
       cursor: pointer;
