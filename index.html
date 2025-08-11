@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found Portal</title>
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #003366, #004080);
+      color: white;
+    }
+    header {
+      background-color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left img {
+      height: 50px;
+      margin-right: 15px;
+    }
+    .header-left .title-line {
+      border-left: 2px solid #003366;
+      padding-left: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+    }
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero .tag {
+      background-color: #ffcc00;
+      color: #003366;
+      display: inline-block;
+      padding: 6px 14px;
+      font-weight: bold;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    .hero h1 span {
+      color: #ffcc00;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .buttons {
+      margin: 30px 0;
+    }
+
+    .buttons button {
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    
+    }
+
+    .lost-btn {
+      background: red;
+      color: white;
+    }
+
+    .found-btn {
+      background: green;
+      color: white;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      padding-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px 30px;
+      text-align: center;
+      width: 180px;
+      backdrop-filter: blur(5px);
+    }
+
+    .stat-box h2 {
+      font-size: 28px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .stat-box p {
+      font-size: 14px;
+      color: #e0e0e0;
+      margin: 0;
+    }
+  </style>
+  </head>
+
+<!-- Header -->
+<header>
+  <div class="header-left">
+    <img src="https://mma.prnewswire.com/media/2415831/Amity_University_Bengaluru_Logo.jpg?p=facebook" alt="Amity Logo">
+    <div class="title-line">Lost & Found Portal</div>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="project_1" class="bg-blue-600 text-white px-4 py-1 rounded-md text-sm hover:bg-blue-700 transition">Login</a>
+  </nav>
+</header>
+ 
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-8">
+            <div class="inline-flex items-center bg-white bg-opacity-20 rounded-full px-4 py-2 mb-6">
+                <i class="fas fa-university mr-2 text-yellow-300"></i>
+                <span class="text-sm font-medium">Official University Portal</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Lost & Found
+                <span class="block text-yellow-300">Portal</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                Connecting our campus community to reunite lost belongings with their rightful owners through our secure and efficient system
+            </p>
+        </div>
+ <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+	 <div> 
+		 <a href="lost.html" class="group bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-red-500/25 hover:scale-105 transform">
+			 <i class="fas fa-exclamation-triangle mr-3 group-hover:animate-pulse"></i>Report Lost Item</a>
+            
+            <a href="found.html" class="group bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-emerald-500/25 hover:scale-105 transform">
+		    <i class="fas fa-check-circle mr-3 group-hover:animate-pulse"></i>Report Found Item</a>
+            
+
+        </div>
+
+       
+         <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                <div class="text-3xl font-bold text-yellow-300 mb-2">150+</div>
+                <div class="text-sm opacity-90">Items Reunited</div>
+            </div>
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                <div class="text-3xl font-bold text-yellow-300 mb-2">24/7</div>
+                <div class="text-sm opacity-90">Service Available</div>
+            </div>
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                <div class="text-3xl font-bold text-yellow-300 mb-2">95%</div>
+                <div class="text-sm opacity-90">Success Rate</div> </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Search Section -->
+<section class="py-16 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center bg-indigo-100 text-indigo-800 rounded-full px-4 py-2 mb-4">
+                <i class="fas fa-search mr-2"></i>
+                <spanclass="text-sm font-medium">Quick Search</span>
+            </div>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6">Find Your Lost Items</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Search through our comprehensive database of lost and found items using keywords, categories, or locations</p>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative group">
+                    <input type="text" id="searchInput" placeholder="Search by item name, category, or location..." 
+                           class="w-full px-8 py-6 text-lg border-2 border-gray-200 rounded-2xl focus:border-indigo-500 focus:outline-none pl-16 shadow-lg transition-all duration-300 group-hover:shadow-xl">
+                    <i class="fas fa-search absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl group-focus-within:text-indigo-500 transition-colors"></i>
+                    <button onclick="searchItems()" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl transition-all duration-300 font-semibold shadow-lg hover:shadow-indigo-500/25">
+                        <i class="fas fa-search mr-2"></i>Search
+                    </button>
+                </div>
+      <!-- Quick Search Tags -->
+                <div class="flex flex-wrap justify-center gap-3 mt-6">
+                    <button onclick="quickSearch('electronics')" class="bg-white hover:bg-indigo-50 text-indigo-600 border border-indigo-200 px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        <i class="fas fa-laptop mr-1"></i>Electronics
+                    </button> 
+                    <button onclick="quickSearch('books')" class="bg-white hover:bg-indigo-50 text-indigo-600 border border-indigo-200 px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        <i class="fas fa-book mr-1"></i>Books
+                    </button>
+                    <button onclick="quickSearch('keys')" class="bg-white hover:bg-indigo-50 text-indigo-600 border border-indigo-200 px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        <i class="fas fa-key mr-1"></i>Keys
+                    </button>
+                     <button onclick="quickSearch('clothing')" class="bg-white hover:bg-indigo-50 text-indigo-600 border border-indigo-200 px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        <i class="fas fa-tshirt mr-1"></i>Clothing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Notification Container -->
+<div id="notificationContainer" class="fixed top-20 right-4 z-50 space-y-3"></div>
+<!-- Items Grid Section -->
+<section class="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Recent Items</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Browse through the latest lost and found items reported by our campus community</p>
+        </div>
+ <!-- Filter Tabs -->
+        <div class="flex justify-center mb-12">
+            <div class="bg-white rounded-2xl p-2 shadow-xl border border-gray-200">
+                <button onclick="showItems('all')" id="allTab" class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 bg-indigo-600 text-white shadow-lg">
+                    <i class="fas fa-list mr-2"></i>All Items
+                </button>
+                <button onclick="showItems('lost')" id="lostTab" class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:text-red-600 hover:bg-red-50">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>Lost Items
+                </button>
+                <button onclick="showItems('found')" id="foundTab" class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:text-emerald-600 hover:bg-emerald-50">
+                    <i class="fas fa-check-circle mr-2"></i>Found Items
+                </button>
+            </div>
+        </div>
+<!-- Items Grid -->
+        <div id="itemsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Lost Items -->
+            <div class="item-card lost-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="electronics">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h3l-1 1v1h12v-1l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">LOST</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>2 days ago
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-gray-800 mb-2 text-lg">MacBook Pro 13"</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Silver MacBook Pro lost in Library Building, 3rd floor</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Library Building</span>
+                        </div>
+                        <button class="bg-red-50 hover:bg-red-100 text-red-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <div class="item-card found-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="keys">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">FOUND</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>1 day ago
+                    </div>
+                </div>
+              <div class="p-6">
+                    <h3 class="font-bold text-gray-800 mb-2 text-lg">Car Keys</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Honda car keys with blue keychain found in parking lot</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-emerald-500"></i>
+                            <span>Parking Lot A</span>
+                        </div>
+                        <button class="bg-emerald-50 hover:bg-emerald-100 text-emerald-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+  <div class="item-card lost-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="books">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">LOST</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>3 days ago
+                    </div>
+                </div>
+<div class="p-6">
+                    <h3 class="font-bold text-gray-800 mb-2 text-lg">Physics Textbook</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">University Physics textbook with yellow cover and notes</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Science Building</span>
+                        </div>
+                        <button class="bg-red-50 hover:bg-red-100 text-red-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+  <div class="item-card found-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="electronics">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">FOUND</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>4 hours ago
+                    </div>
+                </div>
+                <div class="p-6">
+                <h3 class="font-bold text-gray-800 mb-2 text-lg">iPhone 12</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Black iPhone with cracked screen protector found in cafeteria</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-emerald-500"></i>
+                            <span>Student Cafeteria</span>
+                        </div>
+                        <button class="bg-emerald-50 hover:bg-emerald-100 text-emerald-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+  <div class="item-card lost-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="clothing">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 8v12c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.86 1.28-3.41 3-3.86V4c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v.14c1.72.45 3 2 3 3.86zM9 4v.8c1-.24 2-.8 3-.8s2 .56 3 .8V4H9z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">LOST</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>1 week ago
+                    </div>
+                </div>
+                  <div class="p-6">
+                    <h3 class="font-bold text-gray-800 mb-2 text-lg">Blue Backpack</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Navy blue Jansport backpack with laptop and notebooks</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Student Union</span>
+                        </div>
+                        <button class="bg-red-50 hover:bg-red-100 text-red-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+  <div class="item-card found-item bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100" data-category="accessories">
+                <div class="h-52 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center relative">
+                    <svg class="w-24 h-24 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 4C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                    <div class="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">FOUND</div>
+                    <div class="absolute bottom-3 left-3 bg-white bg-opacity-90 backdrop-blur-sm text-gray-600 px-2 py-1 rounded-lg text-xs font-medium">
+                        <i class="fas fa-clock mr-1"></i>2 days ago
+                    </div>
+                </div>
+                 <div class="p-6">
+                    <h3 class="font-bold text-gray-800 mb-2 text-lg">Reading Glasses</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Black frame reading glasses found in lecture hall</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-emerald-500"></i>
+                            <span>Lecture Hall B</span>
+                        </div>
+                        <button class="bg-emerald-50 hover:bg-emerald-100 text-emerald-600 px-3 py-1 rounded-lg text-xs font-medium transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- View All Items Button -->
+        <div class="text-center mt-12">
+            <button onclick="loadMoreItems()" id="viewAllBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg pulse-glow">
+                <i class="fas fa-plus mr-2"></i>View All Items
+            </button>
+            <div id="loadingIndicator" class="hidden mt-4">
+                <div class="inline-flex items-center text-indigo-600">
+                    <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-indigo-600 mr-3"></div>
+                    <span class="font-medium">Loading more items...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- University Info -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                   <img src="https://images.shiksha.com/mediadata/images/1695105380phpiFoGJ7.jpeg" alt="University Logo" class="h-10 w-10 rounded-full object-cover">
+                    <span class="text-xl font-bold">University Portal</span>
+                </div>
+                <p class="text-gray-300 mb-4">Helping students and staff reunite with their lost belongings through our comprehensive lost & found system.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+           <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><button onclick="goToHome()" class="text-gray-300 hover:text-white transition-colors">Home</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Report Lost Item</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Report Found Item</button></li>
+                    <li><button onclick="showAbout()" class="text-gray-300 hover:text-white transition-colors">About Us</button></li>
+                    <li><button onclick="showFAQ()" class="text-gray-300 hover:text-white transition-colors">FAQ</button></li>
+                </ul>
+            </div>
+
+      <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                        <span class="text-gray-300">123 University Ave, Campus City, UC 12345</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-indigo-400"></i>
+                        <span class="text-gray-300">+1 (555) 123-4567</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-indigo-400"></i>
+                        <span class="text-gray-300">lostandfound@university.edu</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-clock text-indigo-400"></i>
+                        <span class="text-gray-300">Mon-Fri: 8:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+    
+	               <!-- Support -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Support</h3>
+                <ul class="space-y-2">
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Help Center</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Contact Support</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Privacy Policy</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Terms of Service</button></li>
+                    <li><button class="text-gray-300 hover:text-white transition-colors">Campus Security</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-300">&copy; 2024 University Lost & Found Portal. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+    // Navigation Functions
+    function goToHome() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        showItems('all');
+    }
+
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
+ // Enhanced Search Functionality
+    function searchItems() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        const items = document.querySelectorAll('.item-card');
+        let visibleCount = 0;
+        
+        if (searchTerm === '') {
+            // Show all items if search is empty
+            items.forEach(item => {
+                item.style.display = 'block';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+                visibleCount++;
+            });
+            showNotification(`Showing all ${visibleCount} items`, 'info');
+            return;
+        }
+        
+        items.forEach(item => {
+            const title = item.querySelector('h3').textContent.toLowerCase();
+            const description = item.querySelector('p').textContent.toLowerCase();
+            const location = item.querySelector('.fas.fa-map-marker-alt').nextElementSibling.textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm) || location.includes(searchTerm)) {
+                item.style.display = 'block';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+                visibleCount++;
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+
+      if (visibleCount === 0) {
+            showNotification(`No items found for "${searchTerm}"`, 'warning');
+        } else {
+            showNotification(`Found ${visibleCount} items matching "${searchTerm}"`, 'success');
+        }
+    }
+
+ // Filter Items
+    function showItems(type) {
+        const allItems = document.querySelectorAll('.item-card');
+        const tabs = document.querySelectorAll('[id$="Tab"]');
+        
+// Reset tab styles
+        tabs.forEach(tab => {
+            if (tab.id === 'allTab') {
+                tab.className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:text-indigo-600 hover:bg-indigo-50';
+            } else if (tab.id === 'lostTab') {
+                tab.className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:text-red-600 hover:bg-red-50';
+            } else if (tab.id === 'foundTab') {
+                tab.className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:text-emerald-600 hover:bg-emerald-50';
+            }
+        });
+        
+// Activate current tab
+        if (type === 'all') {
+            document.getElementById('allTab').className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 bg-indigo-600 text-white shadow-lg';
+        } else if (type === 'lost') {
+            document.getElementById('lostTab').className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 bg-red-600 text-white shadow-lg';
+        } else if (type === 'found') {
+            document.getElementById('foundTab').className = 'px-8 py-3 rounded-xl font-semibold transition-all duration-300 bg-emerald-600 text-white shadow-lg';
+        }
+        
+        // Show/hide items with animation
+        allItems.forEach((item, index) => {
+            if (type === 'all') {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 50);
+            } else if (type === 'lost' && item.classList.contains('lost-item')) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 50);
+            } else if (type === 'found' && item.classList.contains('found-item')) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 50);
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
+
+// Enhanced Quick Search Function
+    function quickSearch(category) {
+        document.getElementById('searchInput').value = category;
+        const items = document.querySelectorAll('.item-card');
+        let visibleCount = 0;
+        
+        items.forEach(item => {
+            const title = item.querySelector('h3').textContent.toLowerCase();
+            const description = item.querySelector('p').textContent.toLowerCase();
+            const itemCategory = item.getAttribute('data-category') || '';
+            
+            if (title.includes(category) || description.includes(category) || itemCategory.includes(category)) {
+                item.style.display = 'block';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+                visibleCount++;
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+        
+      // Show enhanced search results message
+        showNotification(`Found ${visibleCount} items in "${category}" category`, 'info');
+    }
+
+    // Enhanced Notification System
+    function showNotification(message, type = 'info') {
+        const container = document.getElementById('notificationContainer');
+        const notification = document.createElement('div');
+        
+        const colors = {
+            success: 'bg-emerald-500',
+            error: 'bg-red-500',
+            info: 'bg-indigo-500',
+            warning: 'bg-yellow-500'
+        };
+        
+ const icons = {
+            success: 'fas fa-check-circle',
+            error: 'fas fa-exclamation-circle',
+            info: 'fas fa-info-circle',
+            warning: 'fas fa-exclamation-triangle'
+        };
+        
+        notification.className = `${colors[type]} text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 fade-in`;
+        notification.innerHTML = `
+            <div class="flex items-center">
+                <i class="${icons[type]} mr-2"></i>
+                <span class="font-medium">${message}</span>
+                <button onclick="this.parentElement.parentElement.remove()" class="ml-4 text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        `;
+        
+        container.appendChild(notification);
+        
+  // Slide in animation
+        setTimeout(() => {
+            notification.classList.remove('translate-x-full');
+        }, 100);
+        
+        // Auto remove after 4 seconds
+        setTimeout(() => {
+            if (notification.parentElement) {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 300);
+            }
+        }, 4000);
+    }
+
+    // Load More Items Function (No functionality - just a placeholder button)
+    function loadMoreItems() {
+        // Button exists but has no functionality
+    }
+  // Footer Functions
+    function showAbout() {
+        alert('About Us: University Lost & Found Portal helps students and staff reunite with their lost belongings. Our mission is to create a safe and efficient system for reporting and claiming lost items on campus.');
+    }
+
+    function showFAQ() {
+        alert('FAQ: Frequently Asked Questions\n\n1. How do I report a lost item?\n2. How long are items kept?\n3. How do I claim a found item?\n4. Is there a fee for using this service?\n\nFor detailed answers, please contact our support team.');
+    }
+
+// Search on Enter key
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            searchItems();
+        }
+    });
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function() {
+        showItems('all');
+    });
+</script>
+
+</body>
+</html>
